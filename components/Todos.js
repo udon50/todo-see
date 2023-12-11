@@ -53,7 +53,8 @@ const pageLinks = Object.keys(pages).map((page, index) =>
  <Link href={`/${page === 'index' ? '' : page}`} key={index} passHref>
  <span style={{ marginRight: 10 }}>{pages[page].title}</span>
  </Link>
-)}
+)}//}を感で付けているのでこの位置で正しいかわかっていない。
+
 // Reactコンポーネントを実装し、外部のモジュールで利用可能なようexport文で公開
 export default function Todos(props) {
  const { title, fetchQuery } = pages[props.page]
